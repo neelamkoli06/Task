@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey_Form</title>
+    <link rel="stylesheet" type="text/css" href="surveyform.css">
+    <script>
+      function myFunction() {
+      alert("You have successfully submitted this form");
+      }
+  
+    </script>
+  </head>
+  <body>
+    <a href=”surveyform.html”></a>
+    <div class="heading">
+      <h1 id="head">Customer Survey Form</h1>
+    </div>
+    <form onsubmit="myFunction()">
+    <div class="main" id="content1">
+        <div class="formdesign" id="name">
+            <div> <label for="fname">First Name:</label></div>
+            <div><input type="text" name=name placeholder="Enter your first name" class="box" required></div> 
+        </div>
+        <br>
+      <div class="formdesign" id="name">
+          <div><label for="lname">Last Name:</label></div>
+          <div><input type="text" name=name placeholder="Enter your last name" class="box" required><br><br></div>
+      </div>
+      <div class="formdesign" id="name">
+          <div><label for="dob">Date Of Birth:</label></div>
+          <div><input type="date" name=dob placeholder="Enter your date of birth" class="box"><br><br></div>
+      </div>
+      <div class="formdesign" id="country">
+          <div><label for="country">Country:</label></div>
+          <div><input="country" type="text" name=country placeholder="Enter your country name" class="box"></div>
+            <div><select name="country" id="country">
+                <option value="Australia">Australia</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Germany">Germany</option>
+                <option value="Greece">Greece</option>
+                <option value="India">India</option>
+            </select></div>
+          <br>
+      </div>
+      <div class="formdesign" id="gender">
+          <label for="gender">Gender:</label>
+          <br><br>
+          <input type="checkbox" id="Female" name="Female" value="gender" class="box">
+          <label for="Female">Female</label>
+          <br>
+          <input type="checkbox" id="male" name="male" value="gender" class="box">
+          <label for="male">Male</label>
+          <br>
+          <input type="checkbox" id="other" name="other" value="gender" class="box">
+          <label for="other">Other</label></div>
+          <br>
+      
+      <div class="formdesign" id="profession">
+          <div><label for="profession">Profession:</label></div>
+          <br>
+          <input type="radio" id="Student" name="profession" value="Student" class="box">
+          <label for="student">Student</label>
+          <input type="radio" id="Intern" name="profession" value="Intern" class="box">
+          <label for="intern">Intern</label>
+          <input type="radio" id="employee" name="profession" value="Employee" class="box">
+          <label for="employee">Employee</label>
+          <input type="radio" id="other" name="profession" value="other" class="box">
+          <label for="other">Other</label>
+            <br><br>
+      </div>
+      <div class="formdesign" id="email">
+          <div><label for="email">Email:</label></div>
+          <div><input type="text" name=email placeholder="Enter your email" class="box" required><br><br></div>
+      </div>
+      <div class="formdesign" id="mnumber">
+          <div><label for="mnumber">Mobile Number:</label></div>
+          <div><input type="text" name=mnumber placeholder="Enter your mobile number" class="box" required></div>
+          <br><br>
+          <br><br>
+      </div> 
+      <div><input class="but" type="submit" value="Submit" onclick="CreateForm">
+        <input class="but" type="reset" value="Reset">
+      </div>
+    </div>
+    </form>
+  </body>
+</html>
